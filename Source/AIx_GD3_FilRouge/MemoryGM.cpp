@@ -7,6 +7,9 @@ void AMemoryGM::UpdateScore(int32 value)
 {
 	MemoryScore = MemoryScore + value;
 	PairNumber = PairNumber + 1;
+	if (PairNumber = 5) {
+		EndMiniGame = true;
+	}
 }
 
 bool AMemoryGM::TestPair(int32 FirstCardValue, int32 SecondCardValue)

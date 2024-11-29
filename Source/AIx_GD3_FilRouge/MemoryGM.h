@@ -22,6 +22,8 @@ protected:
 	AMemoryCard* PreviousCard; 
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Memory")
 	int32 PairNumber;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Memory")
+	bool EndMiniGame;
 public :
 	UFUNCTION(BlueprintCallable)
 	void UpdateScore(int32 value);
