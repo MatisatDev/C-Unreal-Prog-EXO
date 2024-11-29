@@ -6,6 +6,7 @@
 void AMemoryGM::UpdateScore(int32 value)
 {
 	MemoryScore = MemoryScore + value;
+	PairNumber = PairNumber + 1;
 }
 
 bool AMemoryGM::TestPair(int32 FirstCardValue, int32 SecondCardValue)

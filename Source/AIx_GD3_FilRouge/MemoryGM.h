@@ -20,6 +20,8 @@ protected:
 	int32 MemoryScore;
 	UPROPERTY(editAnywhere,BlueprintReadWrite,Category="Memory")
 	AMemoryCard* PreviousCard; 
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Memory")
+	int32 PairNumber;
 public :
 	UFUNCTION(BlueprintCallable)
 	void UpdateScore(int32 value);
