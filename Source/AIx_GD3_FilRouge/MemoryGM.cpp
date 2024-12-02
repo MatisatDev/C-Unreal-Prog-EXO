@@ -7,7 +7,7 @@ void AMemoryGM::UpdateScore(int32 value)
 {
 	MemoryScore = MemoryScore + value;
 	PairNumber = PairNumber + 1;
-	if (PairNumber = 5) {
+	if (PairNumber = 4) {
 		EndMiniGame = true;
 	}
 }

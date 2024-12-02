@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "MemoryCard.generated.h"
+#include "MemoryGM.h"
 
 UCLASS()
 class AIX_GD3_FILROUGE_API AMemoryCard : public AActor
@@ -21,8 +22,8 @@ public:
 
 	
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	UPROPERTY(EditAnywhere, EditDefaultsOnly, Category = "Memory")
+	TObjectPtr<ABP_GM_Memory_C> GM_Ref;
 
 public:	
 	// Called every frame
